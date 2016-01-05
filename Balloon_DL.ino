@@ -570,14 +570,14 @@ boolean check_battery()
 void init_file(void)
 {
 	File dataFile = SD.open(filename, FILE_WRITE);
-	dataFile.print("name,utc_d,utc_t,lat,lon,alt,fix,sat,speed,"); 	  // From GPS
-	dataFile.print("temp,tempf,"); 								                  	// From DS18B20
-	dataFile.print("MPL_bar,MPL_altm,MPL_temp,MPL_tempf,"); 		      // From MPL3115A2
-	dataFile.print("SI_vis,SI_ir,SI_uv,");						               	// From Si1145
-	dataFile.print("LSM_accX,LSM_accY,LSM_accZ,");				          	// From LSM303
-	dataFile.print("LSM_magX,LSM_magY,LSM_magZ,");					          // From LSM303
-	dataFile.print("DHT_h,DHT_temp,DHT_tempf,DHT_hi,");			        	// From DHT22
-	dataFile.print("CPS,CPM,uSv_hr,rate,");							              // From Geiger
-	dataFile.println("Internal_Vcc");								                  // From Internal VCC
+	dataFile.print("name,utc_d,utc_t,lat,lon,alt,fix,sat,speed,");	// From GPS
+	dataFile.print("temp,tempf,"); 					// From DS18B20
+	dataFile.print("MPL_bar,MPL_altm,MPL_temp,MPL_tempf,"); 	// From MPL3115A2
+	dataFile.print("SI_vis,SI_ir,SI_uv,");				// From Si1145
+	dataFile.print("LSM_accX,LSM_accY,LSM_accZ,");			// From LSM303
+	dataFile.print("LSM_magX,LSM_magY,LSM_magZ,");			// From LSM303
+	dataFile.print("DHT_h,DHT_temp,DHT_tempf,DHT_hi,");		// From DHT22
+	dataFile.print("CPS,CPM,uSv_hr,rate,");				// From Geiger
+	dataFile.println("Internal_Vcc");				// From Internal VCC
 	dataFile.close();
 }
