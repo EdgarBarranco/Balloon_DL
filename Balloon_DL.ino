@@ -96,8 +96,6 @@ int debug_rate = 9600;		// Debug baud rate - 2400 for RF / 9600 for Console
 float magic_val = 0.0066; 	// 1 for the A/D = 0.0048mV but was changed to match DMM
 int min_int_vcc = 3700;		// Minimum value for internal VIN
 int ledPin = 13;
-int RPI_Pin = 4;			// Pin connected to Raspberry Pi GPIO
-boolean RPI_UP = true;		// State of the RPI
 void init_file(void);		
 boolean check_battery(void);
 
