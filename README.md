@@ -1,6 +1,5 @@
 # Balloon_DL
 High Altitude Balloon Data Logger using the Arduino Mega
-#
 
 This project will be used to log relevant data from a high altitude balloon. The collected data will be saved on a SD card for later study. The data is saved every 15 seconds.  
 
@@ -29,8 +28,8 @@ SI1145 Digital UV Index / IR / Visible Light Sensor
 SI1145 - https://www.adafruit.com/product/1777
 Uses: 
 	Adafruit_SI1145.h -
-		https://forums.adafruit.com/viewtopic.php?f=22&t=59664&p=303930&hilit=si1145+address#p303207
-		Based on: https://github.com/adafruit/Adafruit_SI1145_Library
+	https://forums.adafruit.com/viewtopic.php?f=22&t=59664&p=303930&hilit=si1145+address#p303207
+	Based on: https://github.com/adafruit/Adafruit_SI1145_Library
 Connected: I2C
 
 Adafruit Ultimate GPS Logger Shield - Includes GPS Module		
